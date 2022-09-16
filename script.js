@@ -27,8 +27,6 @@ function ShowCart() {
     document.getElementById("Total").innerHTML =
       "Total Price: " + TotalPrice.toFixed(2) + " Shekel";
   }
-  console.log("Masive:" + MyCart);
-  console.log("counter" + count);
 }
 
 ShowCart();
