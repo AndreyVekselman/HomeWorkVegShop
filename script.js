@@ -1,6 +1,6 @@
 let MyCart = [];
 let count = 0;
-
+// --------------show cart Function---------------
 function ShowCart() {
   let TotalPrice = 0.0;
   document.getElementById("Cart").innerHTML = "";
@@ -15,7 +15,6 @@ function ShowCart() {
       let inx = MyCart[i][0];
       removeBtn.setAttribute("onclick", "RemoveProduct(" + inx + ")");
       removeBtn.setAttribute("class", "RmvBtn");
-
       let PrdDesc = document.createElement("span");
       let product = document.createElement("div");
       PrdDesc.innerText = MyCart[i][1] + " " + MyCart[i][2] + " Shekel ";
@@ -33,7 +32,7 @@ function ShowCart() {
 }
 
 ShowCart();
-
+// -------------------AddProduct Function
 function AddProduct(Veg) {
   let Product = [];
   switch (Veg) {
@@ -60,6 +59,7 @@ function AddProduct(Veg) {
   count++;
   ShowCart();
 }
+// ------------------- RemoveProduct Function
 function RemoveProduct(Index) {
   for (let i = 0; i < MyCart.length; i++) {
     if (MyCart[i][0] == Index) {
