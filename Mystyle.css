@@ -1,0 +1,26 @@
+.green {
+  background-color: chartreuse;
+  color: aqua;
+  height: 120px;
+}
+.row {
+  text-align: center;
+}
+.RmvBtn {
+  border-style: solid;
+  border-radius: 10%;
+  border-color: red;
+  width: 70px;
+}
+span {
+  margin-right: 30px;
+}
+#Cart {
+  text-align: left;
+}
+button {
+  border-radius: 10%;
+  border-style: solid;
+  border-radius: 10%;
+  border-color: green;
+}
