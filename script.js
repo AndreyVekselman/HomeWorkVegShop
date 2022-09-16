@@ -1,5 +1,5 @@
 let MyCart = [];
-let count = 0;
+let index = 0;
 // --------------show cart Function---------------
 function ShowCart() {
   let TotalPrice = 0.0;
@@ -33,30 +33,13 @@ function ShowCart() {
 
 ShowCart();
 // -------------------AddProduct Function
-function AddProduct(Veg) {
+function AddProduct(Veg, Price) {
   let Product = [];
-  switch (Veg) {
-    case "Tomato":
-      Product.push(count);
-      Product.push("Tomato");
-      Product.push(4.9);
-      ShowCart();
-      break;
-    case "Cucumber":
-      Product.push(count);
-      Product.push("Cucumber");
-      Product.push(4.95);
-      ShowCart();
-      break;
-    case "Gamba":
-      Product.push(count);
-      Product.push("Gamba");
-      Product.push(5.45);
-      ShowCart();
-      break;
-  }
+  Product.push(index);
+  Product.push(Veg);
+  Product.push(Price);
   MyCart.push(Product);
-  count++;
+  index++;
   ShowCart();
 }
 // ------------------- RemoveProduct Function
